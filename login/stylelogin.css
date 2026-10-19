@@ -43,7 +43,7 @@
 .login-button {
   width: 80%;
   padding: 10px;
-  background-color: #a84caf;
+  background-color: #6c0075;
   color: white;
   border: none;
   border-radius: 5px;
@@ -64,5 +64,8 @@ a:link {
     color:rgb(13, 0, 255)
 }
 a:visited {
-  color: #00ffff;
+  color: #ff0000;
+}
+.login-button:hover {
+  background-color: #2f0033;
 }
