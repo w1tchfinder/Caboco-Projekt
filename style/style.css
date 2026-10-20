@@ -24,13 +24,14 @@
 
 }
 .container {
+    border:none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 40px;
-    margin: 20px;
-    margin-bottom: 5px;
+    margin: 10px 20px 5px 20px;
+    padding: 20px 40px 40px 40px;
 }
 .container2 {
     display: flex;
@@ -38,34 +39,43 @@
     align-items: center;
     margin-bottom: 20px;
     gap: 32px;
-    
+    padding-bottom: 20px;
 }
 .login-button {
-  width: 80%;
-  padding: 10px;
-  background-color: #6c0075;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    width: 80%;
+    padding: 10px;
+    background-color: #a84caf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
-input {
-  border: none;
-  border-bottom: 2px solid #fbfbfb;
-  background-color: none;
-  font-size: 20px;
-  background: none;
+.user_name, .user_pass {
+    border: none;
+    border-bottom: 2px solid #fbfbfb;
+    background-color: none;
+    font-size: 20px;
+    background: none;
+    padding-top: 5px;
 }
-.esqueci {
+.user_name:focus, .user_pass:focus {
+    outline: none;
+    background-color: #0c0c0c;
+    color: #ffffff;
+}
+.pass_label{
+    padding-top: 50px;
+}
+.still-conected {
   color: #ffffff;
 }
 a:link {
     text-decoration: none;
-    color:rgb(13, 0, 255)
+    color:#a84caf;
+}
+a:hover {
+    color: #00ffff;
 }
 a:visited {
-  color: #ff0000;
-}
-.login-button:hover {
-  background-color: #2f0033;
+  color: #00ffff;
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body class="loginbody">
+    <form action="action_page.php" method="post" class="login-form">
+         <div class="login-container">
+            <div id="imgcontainer">
+                <img src="img/login_img/gato.png" alt="Avatar" class="avatar" width="150">
+            </div>
+
+            <fieldset class="container">
+                <label class="name_label"><b></b></label>
+                <input class="user_name" type="text" placeholder="Usuário" title="Por favor, preencha este campo" required>
+                <label class="pass_label"><b></b></label>
+                <input class="user_pass" type="password" placeholder="Senha" title="Por favor, preencha este campo" required>
+            </fieldset>
+            <div class="container2">
+                <a class="forgot" href="#">Forgot password?</a>
+                <label class="still-conected">
+                    <input type="checkbox" checked="checked"> Manter conectado
+                </label>
+            </div>
+                <button type="submit" class="login-button">Login</button>
+        </div>   
+    </form>
+</body>
+</html>
