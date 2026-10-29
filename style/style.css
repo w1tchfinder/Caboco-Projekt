@@ -6,7 +6,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: "BuilderSans", Helvetica, Arial, sans-serif;
-    background-color: #373737;
+}
+.gradient {
+    background: linear-gradient(to bottom, #a84caf , #1e1e1e );
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flow-root;
 }
 .index-header {
     background-image: url("../img/caboco-projekt-banner.png");
@@ -20,6 +26,13 @@ body {
     position: fixed;
     left: 93%;
     top: 10px;
+}
+.cath{
+    display: inline-block;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+    height: 100%;
+    width: 70px;
 }
 .cath:hover{
     transform: scale(1.1);
@@ -54,6 +67,7 @@ body {
 .item{
     margin: 0;
     padding: 0;
+    cursor: pointer;
     border: 1px solid #000000;
     text-align: center;
     background-color: #0f0f0f;
@@ -64,11 +78,31 @@ body {
 .item a{
     display: block;
     padding: 10px 70px;
+    color:#a84caf;
 }
 .item:hover {
     background-color: #141414;
 }
-.logo{
+.buttom{
+    display: inline-block;
+    /* margin: 100px 42% 100px 42%; */
+    margin: 5%;
+    padding: 10px 70px;
+    font-size: 22px;
+    background-color: #a84caf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 5px 10px #000000;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.buttom:hover {
+    background-color: #ae31b9;
+    transform: scale(1.05);
+    /* margin: 100px 41.5% 100px 41.5%; */
+}.logo{
     padding:40px 0 0 20px;
 }
 .navbar:hover .nav-links, .navbar:focus-within .nav-links {
@@ -83,6 +117,66 @@ body {
 .index-intro p{
     font-size: 36px;
     text-shadow: 0px 0px 5px #a84caf;
+}
+.index-card-group{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0 50px 0;
+}
+.index-card-section h1{
+    font-size: 36px;
+    text-shadow: 0px 0px 5px #a84caf;
+    text-align: center;
+}
+.index-card{
+    width: 300px;
+    height: 200px;
+    padding: 20px 0 50px 0;
+    background-color: #1e1e1e;
+    border-radius: 20px 60px;
+    list-style-type: none;
+    text-align: justify;
+    border-image: url("../img/borda-card-cyber.png") 64 / 32px stretch;
+}
+.index-card h2{
+    font-size: 28px;
+    margin: 20px 0 20px 0;
+    color: #000000;
+    text-align: center;
+}
+.index-card p{
+    font-size: 20px;
+    margin: 50px 20px 20px 20px;
+    color: #ffffff7c;
+}
+.explain{
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 50px 0 50px 0;
+    margin: 0 20% 0 20%;
+    border-radius: 20px 60px;
+    border-image: url("../img/borda-card-cyber.png") 64 / 32px stretch;
+}
+.explain h1{
+    font-size: 36px;
+    text-shadow: 0px 0px 5px #a84caf;
+}
+.explain ol{
+    font-size: 20px;
+    text-align: justify;
+    margin: 5% 20% 0 20%;
+}
+.explain li{
+    margin: 20px 0 20px 0;
+    font-size: 26px;
+}
+.explain a{
+    color: #a84caf;
+    text-decoration: none;
+}
+.explain a:hover{
+    color: #ba0bca;
 }
 /* Login Page Styles */
 .loginbody {
@@ -156,13 +250,13 @@ body {
 .still-conected {
   color: #ffffff;
 }
-a:link {
+.loginbody a:link {
     text-decoration: none;
     color:#a84caf;
 }
-a:hover {
+.loginbody a:hover {
     color: #ba0bca;
-}
-a:visited {
+} 
+.loginbody a:visited {
   color: #ba0bca;
 }
