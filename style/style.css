@@ -376,3 +376,74 @@ body {
 .loginbody a:visited {
   color: #ba0bca;
 }
+/* -----------------------------------------------------chat Page Styles------------------------------------------------------ */
+.chat-container {
+  display: flex;
+  height: 100vh;
+}
+.chat-sidebar {
+  width: 250px;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 16px;
+}
+.chat-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.chat-sidebar li {
+  margin-bottom: 12px;
+}
+.chat-sidebar a {
+  color: white;
+  text-decoration: none;
+}
+.chat {
+  flex: 1;
+  background-color: #373737;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.mensagens {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+.balao {
+  width: fit-content;
+  max-width: 70%;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  border-radius: 16px;
+}
+.usuario {
+  background-color: #a84caf;
+  margin-left: auto;
+}
+.bot {
+  background-color: #1e1e1e;
+}
+.chat form {
+  display: flex;
+  gap: 12px;
+  padding: 14px 20px;
+  background-color: #1e1e1e;
+}
+.chat input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  color: white;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+}
+.chat button {
+  padding: 10px 24px;
+  background-color: #a84caf;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
