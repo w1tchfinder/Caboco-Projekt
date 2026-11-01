@@ -2,6 +2,7 @@
     font-family: "BuilderSans";
     src: url("../style/BuilderSans-Regular-400.otf") format("otf");    
 }
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -446,4 +447,74 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+/* -----------------------------------------------------Config Page Styles------------------------------------------------------ */
+.configlado {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: auto;
+
+    object-fit: contain;
+    z-index: 1;
+}
+
+.botoesconfig {
+    position: fixed;
+    top: 155px;
+    left: 10px;
+    margin-top: 4%;
+    margin-left: 0;
+    width: 140px;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 50%
+}
+
+.botoesconfig button {
+    font-family: 'Rajdhani', sans-serif;
+    background: transparent;
+    color: #e52bff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    text-align: left;
+    margin: 10%;
+    font-size: 80px;
+    width: 360%;
+    height: 120px;
+    clip-path: polygon(
+        0 0,
+        95% 0,
+        100% 20%,
+        100% 80%,
+        95% 100%,
+        0 100%
+    );
+
+}
+.botoesconfig button:hover {
+    color: #ffffff;
+    background-color: #e52bff;;
+}
+.quadrado {
+    display: none;
+
+    width: 400px;
+    height: 300px;
+
+    background: #1c1520;
+    border: 2px solid #d42be8;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0 0 15px #d42be8;
 }
