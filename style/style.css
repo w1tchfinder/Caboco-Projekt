@@ -485,20 +485,19 @@ body {
     object-fit: contain;
     z-index: 1;
 }
-
 .botoesconfig {
     position: fixed;
-    top: 155px;
-    left: 10px;
-    margin-top: 4%;
-    margin-left: 0;
-    width: 140px;
+    top: 8cm;
+    left: 0%;
+    margin-top: -100px;
+    margin-left: 0.7%;
+    width: 95px;
     z-index: 2;
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    font-size: 50%
+    gap: 5px;
+    font-size: 50%;
 }
 
 .botoesconfig button {
@@ -509,10 +508,10 @@ body {
     padding: 12px;
     cursor: pointer;
     text-align: left;
-    margin: 10%;
-    font-size: 80px;
-    width: 360%;
-    height: 120px;
+    margin: 0.5%;
+    font-size: 40px;
+    width: 275%;
+    height: 100%;
     clip-path: polygon(
         0 0,
         95% 0,
