@@ -474,63 +474,42 @@ body {
   cursor: pointer;
 }
 /* -----------------------------------------------------Config Page Styles------------------------------------------------------ */
-
-/* Imagem lateral */
 .configlado {
     position: fixed;
     top: 0;
     left: 0;
-
     width: clamp(150px, 20vw, 220px);
     height: 100vh;
     height: 100dvh;
-
     object-fit: fill;
     z-index: 1;
 }
-
-/* Container dos botões */
 .botoesconfig {
     position: fixed;
-
     top: 21.5%;
     left: 0;
-
     width: clamp(150px, 20vw, 220px);
-
     display: flex;
     flex-direction: column;
     align-items: stretch;
-
     gap: clamp(5px, 1vh, 10px);
-
     z-index: 2;
     box-sizing: border-box;
 }
-
-/* Botões */
 .botoesconfig button {
     font-family: 'Rajdhani', sans-serif;
-
     width: 94%;
     height: clamp(40px, 6.3vh, 52px);
-
     margin: 0 auto;
     padding: 8px 12px;
-
     box-sizing: border-box;
-
     background: transparent;
     color: #e52bff;
-
     border: none;
     cursor: pointer;
-
     text-align: left;
-
     font-size: clamp(14px, 1.2vw, 18px);
     font-weight: bold;
-
     clip-path: polygon(
         0 0,
         95% 0,
@@ -539,39 +518,27 @@ body {
         95% 100%,
         0 100%
     );
-
     transition: 
         background-color 0.3s ease,
         color 0.3s ease;
 }
-
-/* Efeito ao passar o mouse */
 .botoesconfig button:hover {
     color: #ffffff;
     background-color: #e52bff;
 }
-
-/* Botão selecionado */
 .botoesconfig button.ativo {
     color: #ffffff;
     background-color: #b52bc4;
 }
-
-/* Quadrado de conteúdo */
 .quadrado {
     display: none;
-
     width: min(400px, 85vw);
     height: min(300px, 70vh);
-
     background: #1c1520;
     border: 2px solid #d42be8;
-
     position: fixed;
     top: 50%;
     left: 50%;
-
     transform: translate(-50%, -50%);
-
     box-shadow: 0 0 15px #d42be8;
 }
