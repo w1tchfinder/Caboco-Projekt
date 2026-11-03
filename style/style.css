@@ -250,10 +250,19 @@ body {
 }
 .about-card h2{
     font-size: 28px;
-    margin: 30px 0 0 0;
+    margin: 30px 0 0 0px;
     color: #000000;
     text-align: center;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
+.about-card a{
+    text-decoration: none;
+}
+.about-card h2:hover{
+    color: #ba0bca;
+    text-decoration: underline;
+}
+
 .about-card-img{
     display: flex;
     margin: 0 0 0 50px;
