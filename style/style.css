@@ -146,7 +146,7 @@ body {
 .index-card h2{
     font-size: 28px;
     margin: 20px 0 20px 0;
-    color: #000000;
+    color: #e52bff;
     text-align: center;
 }
 .index-card p{
@@ -173,6 +173,7 @@ body {
 .explain li{
     margin: 20px 0 20px 0;
     font-size: 26px;
+    color: #ffffff7c;
 }
 .explain a{
     color: #a84caf;
@@ -209,6 +210,12 @@ body {
 }
 .about-main{
     padding: 100px 0 50px 0;
+}
+.about-main h1{
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 0px 0px 5px #a84caf;
+    color: #e52bff;
 }
 .about-article{
     margin: 0 20% 0 20%;
@@ -251,7 +258,7 @@ body {
 .about-card h2{
     font-size: 28px;
     margin: 30px 0 0 0px;
-    color: #000000;
+    color: #e52bff;
     text-align: center;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
