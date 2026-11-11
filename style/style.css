@@ -50,6 +50,7 @@ body {
     width: 20px;
     overflow: hidden;
     transition: width 0.4s ease;
+    z-index: 1;
 }
 .navbar:hover{
     width: 330px;
@@ -115,8 +116,37 @@ body {
     transition-delay: 0s;
 }
 .index-intro{
+    position: relative;
    text-align: center;
    padding: 50px 0 0 0;
+}
+.capri{
+    position: fixed;
+    left: 90%;
+    bottom: 35%;
+    pointer-events: none;
+    transform: scaleX(-1);
+    width: 116px;
+    height: 384px;
+    background: url("../img/idle.png") 0 0 no-repeat;
+    animation: idle 2.5s steps(60) infinite;
+}
+@keyframes idle {
+    to { background-position: -6960px 0; }
+}
+.capri-sleep{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(-1);
+    pointer-events: none;
+    width: 240px;
+    height: 384px;
+    background: url("../img/sleep.png") 0 0 no-repeat;
+    animation: sleep 1s steps(16) infinite;
+}
+@keyframes sleep {
+    to { background-position: -3840px 0; }
 }
 .index-intro p{
     font-size: 36px;
@@ -422,7 +452,7 @@ body {
   text-align: center;
   margin-bottom: 40px;
 }
-.chat-sidebar a {
+.chat-hover{
     display: block;
     padding: 8px 12px 8px 14px;
     color: white;
@@ -432,7 +462,7 @@ body {
     text-align: center;
     transition: background-color 0.3s ease;
 }
-.chat-sidebar a:hover {
+.chat-hover:hover {
     background-color: #a84caf;
     transition: background-color 0.3s ease;
 }
