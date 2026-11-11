@@ -576,15 +576,106 @@ body {
     color: #ffffff;
     background-color: #b52bc4;
 }
+
+.conteudo-config {
+    position: fixed;
+    top: 0;
+    left: clamp(150px, 20vw, 220px);
+    width: calc(100% - clamp(150px, 20vw, 220px));
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 35px;
+    overflow-y: auto;
+}
+
+.titulo-config {
+    margin-bottom: 35px;
+    color: #1c1520;
+}
+
+.titulo-config h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+.titulo-config p {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.grade-quadrados {
+    display:grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: repeat(1, minmax(655px, auto));
+    gap: 25px;
+}
+
 .quadrado {
     display: none;
-    width: min(400px, 85vw);
-    height: min(300px, 70vh);
     background: #1c1520;
     border: 2px solid #d42be8;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0 15px #d42be8;
+    border-radius: 12px 0px 0px 12px;
+    min-height: 250px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #d42be855;
+    overflow: hidden;
 }
+.quadrado.visivel {
+    display: block;
+}
+.quadrado h2 {
+    color: #e52bff;
+    font-size: 22px;
+    padding: 15px 25px;
+    margin: 0;
+    border-bottom: 1px solid #71347a;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.conteudo-quadrado {
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.salvar {
+    display: block;
+    margin: 30px 0 0 auto;
+    padding: 15px 30px;
+    background: #c42bd6;
+    color: #1c1520;
+    border: 2px solid #e52bff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.salvar:hover {
+    background: #e52bff;
+    box-shadow: 0 0 15px #e52bff;
+}
+
+@media (max-width: 850px) {
+    .grade-quadrados {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .quadrado {
+        min-height: 220px;
+    }
+}
+.perfil-fieldset {
+    border:none;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: 40px;
+    margin: 10px 20px 5px 20px;
+    padding: 20px 40px 40px 40px;
+}
+.

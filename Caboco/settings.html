@@ -4,24 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
+    <script src="../scripts/config.js"></script>
     <title>Configurações</title>
 </head>
 <body>
     <div class="gradient">
        <img src="../img/caboco_projekt_painel_transparente.png" alt="Logo Caboco" class="configlado">
         <div class="botoesconfig">
-            <button onclick="abrirQuadrado()">Geral</button>
-            <button>Privacidade</button>
-            <button>Chatbot</button>
-            <button>Histórico</button>
-            <button>Notificações</button>
-            <button>Privacidade</button>
+            <button onclick="abrirQuadrado('perfil')">Geral</button>
+            <button onclick="abrirQuadrado('aparencia')">Aparência</button>
+            <button onclick="abrirQuadrado('chatbot')">Chatbot</button>
+            <button onclick="abrirQuadrado('historico')">Histórico</button>
+            <button onclick="abrirQuadrado('notificacoes')">Notificações</button>
+            <button onclick="abrirQuadrado('privacidade')">Privacidade</button>
         </div>
         <div>
             <a class="buttom2" href="index.html" style="margin: 15px 15px;">Voltar</a>
 
         </div>
-        
-        <div id="quadrado" class="quadrado"></div></body>
     </div>
+    
+<main class="conteudo-config">
+
+    <div class="titulo-config">
+        <h1>Configurações</h1>
+        <p>Personalize sua experiência no CABOCO-BOT</p>
+    </div>
+
+    <div class="grade-quadrados">
+
+        <div id="perfil" class="quadrado">
+            <h2>Perfil</h2>
+            <div class="conteudo-quadrado">
+              <img src="../img/gato.png" alt="" width="500px" height="500px" class="perfil-image">
+              <div>
+                <fieldset class="perfil-fieldset">
+                <label class="name_label"><b></b></label>
+                <input class="user_name" type="text" placeholder="Usuário" title="Por favor, preencha este campo" required>
+                <label class="pass_label"><b></b></label>
+                <input class="user_pass" type="password" placeholder="Senha" title="Por favor, preencha este campo" required>
+            </fieldset>
+              </div>
+            </div>
+        </div>
+
+        <div id="aparencia" class="quadrado">
+            <h2>Aparência</h2>
+            <div class="conteudo-quadrado">
+                
+            </div>
+        </div>
+
+        <div id="chatbot" class="quadrado">
+            <h2>Preferências do chatbot</h2>
+            <div class="conteudo-quadrado">
+                
+            </div>
+        </div>
+        
+        <div id="historico" class="quadrado">
+            <h2>Histórico</h2>
+            <div class="conteudo-quadrado">
+                
+            </div>
+        </div>
+        
+        <div id="notificacoes" class="quadrado">
+            <h2>Notificações</h2>
+            <div class="conteudo-quadrado">
+                
+            </div>
+        </div>
+        
+        <div id="privacidade" class="quadrado">
+            <h2>Privacidade</h2>
+            <div class="conteudo-quadrado">
+                
+            </div>
+        </div>
+
+    </div>
+
+    <button class="salvar">Salvar</button>
+
+</main>
+
+    </body>
 </html>
