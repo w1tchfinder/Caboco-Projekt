@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
-    <script src="../scripts/config.js"></script>
+    <script src="../scripts/config.js" defer></script>
     <title>Configurações</title>
 </head>
-<body>
+<body class="settings-body">
     <div class="gradient">
        <img src="../img/caboco_projekt_painel_transparente.png" alt="Logo Caboco" class="configlado">
         <div class="botoesconfig">
@@ -42,7 +42,7 @@
                 <label class="name_label"><b></b></label>
                 <input class="user_name" type="text" placeholder="Usuário" title="Por favor, preencha este campo" required>
                 <label class="pass_label"><b></b></label>
-                <input class="user_pass" type="password" placeholder="Senha" title="Por favor, preencha este campo" required>
+                <input class="user_pass" type="password" placeholder="Apelido">
             </fieldset>
               </div>
             </div>
@@ -54,7 +54,7 @@
                 
             </div>
         </div>
-
+        <div class="laydown"></div>
         <div id="chatbot" class="quadrado">
             <h2>Preferências do chatbot</h2>
             <div class="conteudo-quadrado">
@@ -85,9 +85,8 @@
 
     </div>
 
-    <button class="salvar">Salvar</button>
-
+    <a href="index.html"><button class="salvar">Salvar</button></a>
+    
 </main>
-
     </body>
 </html>

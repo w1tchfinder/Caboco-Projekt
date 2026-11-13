@@ -9,3 +9,4 @@ function abrirQuadrado(id) {
     const selecionado = document.getElementById(id);
     selecionado.classList.add('visivel');
 }
+abrirQuadrado('perfil');

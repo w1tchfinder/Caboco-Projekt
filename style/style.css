@@ -120,6 +120,7 @@ body {
    text-align: center;
    padding: 50px 0 0 0;
 }
+/* Capri anims */
 .capri{
     position: fixed;
     left: 90%;
@@ -148,6 +149,39 @@ body {
 @keyframes sleep {
     to { background-position: -3840px 0; }
 }
+.perch{
+    position: absolute;
+    transform: scale(1);
+    left: 52%;
+    bottom: 38%;
+    /* left: 65%;
+    bottom: 62.3%; */
+    /* bottom: 587px;
+    left: 1230px; */
+    pointer-events: none;
+    width: 196px;
+    height: 384px;
+    background: url("../img/perch.png") 0 0 no-repeat;
+    animation: perch 2.5s steps(60) infinite;
+}
+@keyframes perch {
+  to { background-position: -11760px 0; }
+}
+.laydown{
+    position: absolute;
+    transform: scale(0.7);
+    left: 50%;
+    bottom: 58%;
+    pointer-events: none;
+    width: 372px;
+    height: 384px;
+    background: url("../img/laydown.png") 0 0 no-repeat;
+    animation: laydown 2.5s steps(60) infinite;
+}
+@keyframes laydown {
+  to { background-position: -22320px 0; }
+}
+/* Capri anims */
 .index-intro p{
     font-size: 36px;
     text-shadow: 0px 0px 5px #a84caf;
@@ -678,4 +712,3 @@ body {
     margin: 10px 20px 5px 20px;
     padding: 20px 40px 40px 40px;
 }
-.
