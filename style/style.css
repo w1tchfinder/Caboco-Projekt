@@ -712,3 +712,59 @@ body {
     margin: 10px 20px 5px 20px;
     padding: 20px 40px 40px 40px;
 }
+/* ----------------------------------------------------- history Page Styles------------------------------------------------------ */
+.pagina-historico {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #373737;
+}
+
+.historico {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 16px;
+  color: white;
+}
+
+.historico .cartao {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 24px;
+}
+
+.historico table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.historico th,
+.historico td {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid #444444;
+}
+
+.historico th {
+  color: #a84caf;
+}
+
+.historico .botao {
+  display: inline-block;
+  padding: 7px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.historico .abrir {
+  background-color: #a84caf;
+  color: white;
+  border: none;
+}
+
+.historico .apagar {
+  background-color: transparent;
+  color: #a84caf;
+  border: 1px solid #a84caf;
+}
