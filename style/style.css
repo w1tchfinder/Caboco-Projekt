@@ -181,6 +181,19 @@ body {
 @keyframes laydown {
   to { background-position: -22320px 0; }
 }
+.dance {
+    position: fixed;
+    transform: scaleX(-1);
+    left: 0;
+    pointer-events: none;
+    width: 240px;
+    height: 384px;
+    background: url("../img/dance.png") 0 0 no-repeat;
+    animation: dance 1s steps(16) infinite;
+}
+@keyframes dance {
+  to { background-position: -3840px 0; }
+}
 /* Capri anims */
 .index-intro p{
     font-size: 36px;
