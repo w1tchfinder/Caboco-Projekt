@@ -576,6 +576,10 @@ body {
     z-index: 2;
     box-sizing: border-box;
 }
+.perfil-fieldset input::placeholder {
+    color: #ffffffa0 !important;
+    opacity: 1;
+}
 .botoesconfig button {
     font-family: 'Rajdhani', sans-serif;
     width: 94%;
@@ -711,7 +715,6 @@ body {
     font-size: 40px;
     margin: 10px 20px 5px 20px;
     padding: 20px 40px 40px 40px;
-<<<<<<< HEAD
 }
 /* ----------------------------------------------------- history Page Styles------------------------------------------------------ */
 .pagina-historico {
@@ -768,6 +771,4 @@ body {
   background-color: transparent;
   color: #a84caf;
   border: 1px solid #a84caf;
-=======
->>>>>>> 027edb8 (a)
 }
