@@ -120,11 +120,11 @@ body {
    text-align: center;
    padding: 50px 0 0 0;
 }
-/* Capri anims */
+/* -----------------------------------------------------Capri animations ------------------------------------------------------ */
 .capri{
     position: fixed;
-    left: 90%;
-    bottom: 35%;
+    left: 90vw;
+    bottom: 35vh;
     pointer-events: none;
     transform: scaleX(-1);
     width: 116px;
@@ -152,8 +152,8 @@ body {
 .perch{
     position: absolute;
     transform: scale(1);
-    left: 52%;
-    bottom: 38%;
+    left: 52vw;
+    bottom: 38vh;
     /* left: 65%;
     bottom: 62.3%; */
     /* bottom: 587px;
@@ -170,8 +170,8 @@ body {
 .laydown{
     position: absolute;
     transform: scale(0.7);
-    left: 50%;
-    bottom: 58%;
+    left: 50vw;
+    bottom: 58vh;
     pointer-events: none;
     width: 372px;
     height: 384px;
@@ -183,8 +183,9 @@ body {
 }
 .dance {
     position: fixed;
-    transform: scaleX(-1);
-    left: 0;
+    transform: scaleX(-1) scale(1.2);
+    left: 7.5vw;
+    bottom: 35vh;
     pointer-events: none;
     width: 240px;
     height: 384px;
@@ -194,7 +195,7 @@ body {
 @keyframes dance {
   to { background-position: -3840px 0; }
 }
-/* Capri anims */
+/* -----------------------------------------------------Capri animations ------------------------------------------------------ */
 .index-intro p{
     font-size: 36px;
     text-shadow: 0px 0px 5px #a84caf;
@@ -471,39 +472,48 @@ body {
   color: #ba0bca;
 }
 /* -----------------------------------------------------Chat Page Styles------------------------------------------------------ */
+.pagina-chat {
+  margin: 0;
+  padding: 32px 16px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(#7a3f84, #2e2433);
+}
 .chat-container {
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 64px);
+  max-width: 90vw;
+  margin: 0 auto;
+  border: 3px solid #a84caf;
+  border-radius: 8px;
+  box-shadow: 6px 6px 0 #000;
+  overflow: hidden;
 }
 .chat-sidebar {
   width: 250px;
-  background: #1e1e1e;
+  background-color: #1e1e1e;
   color: white;
-  padding: 16px 16px 16px 4px;
-  margin: 0;
+  padding: 16px;
+  border-right: 2px solid #a84caf;
 }
-.logo-chat {
-  display: block;
-  margin: 0 0 20px;
+.chat-sidebar h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #e61aff;
+  text-shadow: 0 0 8px #a84caf;
 }
 .chat-sidebar ul {
   list-style: none;
   padding: 0;
 }
 .chat-sidebar li {
-  margin-bottom: 12px;
-}
-.chat-sidebar h2 {
-  margin-top: 0;
-  font-size: 26px;
+  margin-bottom: 22px;
   text-align: center;
-  margin-bottom: 40px;
 }
-.chat-hover{
+.chat-hover {
     display: block;
     padding: 8px 12px 8px 14px;
     color: white;
-    margin-left: 7px;
     text-decoration: none;
     background-color: #1e1e1e;
     text-align: center;
@@ -515,7 +525,7 @@ body {
 }
 .chat {
   flex: 1;
-  background-color: #373737;
+  background-color: #2e2433;
   color: white;
   display: flex;
   flex-direction: column;
@@ -553,10 +563,6 @@ body {
   background: none;
   border: none;
   border-bottom: 2px solid white;
-}
-.chat input:focus {
-  outline: none;
-  border-bottom: 2px solid #a84caf;
 }
 .chat button {
   padding: 10px 24px;
@@ -567,111 +573,156 @@ body {
   cursor: pointer;
 }
 /* -----------------------------------------------------Config Page Styles------------------------------------------------------ */
-.pagina-chat {
-  margin: 0;
-  padding: 32px 16px;
-  min-height: 100vh;
-  box-sizing: border-box;
-  background: linear-gradient(#7a3f84, #2e2433);
+.configlado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: clamp(150px, 20vw, 220px);
+    height: 100vh;
+    height: 100dvh;
+    object-fit: fill;
+    z-index: 1;
 }
-
-.chat-container {
-  display: flex;
-  height: calc(100vh - 64px);
-  max-width: 1000px;
-  margin: 0 auto;
-  border: 3px solid #a84caf;
-  border-radius: 8px;
-  box-shadow: 6px 6px 0 #000;
-  overflow: hidden;
+.botoesconfig {
+    position: fixed;
+    top: 21.5%;
+    left: 0;
+    width: clamp(150px, 20vw, 220px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: clamp(5px, 1vh, 10px);
+    z-index: 2;
+    box-sizing: border-box;
 }
-
-.chat-sidebar {
-  width: 250px;
-  background-color: #1e1e1e;
-  color: white;
-  padding: 16px;
-  border-right: 2px solid #a84caf;
+.perfil-fieldset input::placeholder {
+    color: #ffffffa0 !important;
+    opacity: 1;
 }
-
-.chat-sidebar h2 {
-  margin-top: 0;
-  font-size: 18px;
-  color: #e61aff;
-  text-shadow: 0 0 8px #a84caf;
+.botoesconfig button {
+    font-family: 'Rajdhani', sans-serif;
+    width: 94%;
+    height: clamp(40px, 6.3vh, 52px);
+    margin: 0 auto;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    background: transparent;
+    color: #e52bff;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: clamp(14px, 1.2vw, 18px);
+    font-weight: bold;
+    clip-path: polygon(
+        0 0,
+        95% 0,
+        100% 20%,
+        100% 80%,
+        95% 100%,
+        0 100%
+    );
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
-
-.chat-sidebar ul {
-  list-style: none;
-  padding: 0;
+.botoesconfig button:hover {
+    color: #ffffff;
+    background-color: #e52bff;
 }
-
-.chat-sidebar li {
-  margin-bottom: 12px;
+.botoesconfig button.ativo {
+    color: #ffffff;
+    background-color: #b52bc4;
 }
-
-.chat-sidebar a {
-  color: white;
-  text-decoration: none;
+.conteudo-config {
+    position: fixed;
+    top: 0;
+    left: clamp(150px, 20vw, 220px);
+    width: calc(100% - clamp(150px, 20vw, 220px));
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 35px;
+    overflow-y: auto;
 }
-
-.chat {
-  flex: 1;
-  background-color: #2e2433;
-  color: white;
-  display: flex;
-  flex-direction: column;
+.titulo-config {
+    margin-bottom: 35px;
+    color: #1c1520;
 }
-
-.mensagens {
-  flex: 1;
-  padding: 20px;
-  overflow-y: auto;
+.titulo-config h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
 }
-
-.balao {
-  width: fit-content;
-  max-width: 70%;
-  padding: 10px 14px;
-  margin-bottom: 10px;
-  border-radius: 16px;
+.titulo-config p {
+    font-size: 18px;
+    margin-top: 0;
 }
-
-.usuario {
-  background-color: #a84caf;
-  margin-left: auto;
+.grade-quadrados {
+    display:grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: repeat(1, minmax(655px, auto));
+    gap: 25px;
 }
-
-.bot {
-  background-color: #1e1e1e;
+.quadrado {
+    display: none;
+    background: #1c1520;
+    border: 2px solid #d42be8;
+    border-radius: 12px 0px 0px 12px;
+    min-height: 250px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #d42be855;
+    overflow: hidden;
+    min-height: 220px;
 }
-
-.chat form {
-  display: flex;
-  gap: 12px;
-  padding: 14px 20px;
-  background-color: #1e1e1e;
+.quadrado.visivel {
+    display: block;
 }
-
-.chat input {
-  flex: 1;
-  padding: 8px;
-  font-size: 16px;
-  color: white;
-  background: none;
-  border: none;
-  border-bottom: 2px solid white;
+.quadrado h2 {
+    color: #e52bff;
+    font-size: 22px;
+    padding: 15px 25px;
+    margin: 0;
+    border-bottom: 1px solid #71347a;
+    font-family: 'Rajdhani', sans-serif;
 }
-
-.chat button {
-  padding: 10px 24px;
-  background-color: #a84caf;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+.conteudo-quadrado {
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
 }
-/* ----------------------------------------------------- history Page Styles------------------------------------------------------ */
+.salvar {
+    display: block;
+    margin: 30px 0 0 auto;
+    padding: 15px 30px;
+    background: #c42bd6;
+    color: #1c1520;
+    border: 2px solid #e52bff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.salvar:hover {
+    background: #e52bff;
+    box-shadow: 0 0 15px #e52bff;
+}
+@media (max-width: 850px) {
+    .grade-quadrados {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+.perfil-fieldset {
+    border:none;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: 40px;
+    margin: 10px 20px 5px 20px;
+    padding: 20px 40px 40px 40px;
+}
+/* ----------------------------------------------------- History Page Styles------------------------------------------------------ */
 .pagina-historico {
   margin: 0;
   min-height: 100vh;
