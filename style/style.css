@@ -564,6 +564,10 @@ body {
   border: none;
   border-bottom: 2px solid white;
 }
+.chat input:focus {
+  outline: none;
+  border-bottom: 2px solid #a84caf;
+}
 .chat button {
   padding: 10px 24px;
   background-color: #a84caf;
